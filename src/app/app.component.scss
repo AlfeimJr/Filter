@@ -1,0 +1,17 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  .filter-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    cursor: pointer;
+    width: 40px;
+
+    mat-icon {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<section class="filter">
+    <header>
+        <h1>Filtro</h1>
+        <mat-icon (click)="matDialogRef.close()">close</mat-icon>
+    </header>
+    <main>
+        <app-options-filter [range]="range" [symbolsSelected]="symbolsSelected"></app-options-filter>
+    </main>
+    <footer>
+        <button (click)="clearFilter()" class="clear">Limpar</button>
+        <button (click)="applyFilter()" [disabled]="range.pristine && symbolsSelected.pristine && !isClear" class="apply">Aplicar</button>
+    </footer>
+</section>

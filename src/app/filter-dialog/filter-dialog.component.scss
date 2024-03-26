@@ -1,0 +1,43 @@
+.filter{
+    header, main, footer{
+        padding: 1rem;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            margin: 0;
+        }
+        mat-icon{
+            cursor: pointer;
+        }
+    }
+    footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+
+        .clear{
+            background-color: transparent;
+            border: none;
+            color: rgb(77, 77, 77);
+            cursor: pointer;
+        }
+        .apply{
+            background-color: rgb(224, 78, 78);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+
+            &:disabled{
+                background-color: rgb(179, 179, 179);
+                cursor: not-allowed;
+                
+            }
+        }
+    }
+}
